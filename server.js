@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 	var os = require("os");
    var hostname = os.hostname();
-  res.send('Hello5 from host:<h1 style="color:yellow;background:black">'+hostname+'</h1>');
+  res.send('Hello6 from host:<h1 style="color:yellow;background:black">'+hostname+'</h1>');
 });
 
 app.listen(PORT);
