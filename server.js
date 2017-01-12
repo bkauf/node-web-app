@@ -9,9 +9,11 @@ const PORT = 8080;
 const app = express();
 app.get('/', function (req, res) {
 
-	var os = require("os");
+   var os = require("os");
    var hostname = os.hostname();
-  res.send('<div style="width:100%><div style="width:300px;margin-left:auto; margin-right:auto;">Hello9 from host:<h1 style="color:yellow;background:black">'+hostname+'</h1></div></div>');
+   var html     = '<div style="width:100%;"><div style="width:300px;margin-left:auto; margin-right:auto;">';
+   var html    += 'Hellop from host:'+<h1 style="color:yellow;background:black">'+hostname+'</h1></div></div>'; 
+   res.send(html);
 });
 
 app.listen(PORT);
