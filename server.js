@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
    var os = require("os");
    var hostname = os.hostname();
    var html     = '<div style="width:100%;"><div style="width:300px;margin-left:auto; margin-right:auto; text-align=center">';
-       html    += 'Helloo from host: <h1 style="color:yellow;background:black; padding: 0cm 0cm 0cm 1cm;"> '+hostname+'</h1></div></div>'; 
+       html    += 'Hellop from host: <h1 style="color:yellow;background:black; padding: 0cm 0cm 0cm 1cm;"> '+hostname+'</h1></div></div>'; 
    res.send(html);
 });
 
