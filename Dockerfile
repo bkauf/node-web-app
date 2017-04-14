@@ -11,5 +11,5 @@ RUN npm install
 COPY . /usr/src/app
 
 EXPOSE 8080
-HEALTHCHECK --interval=10s --timeout=3s CMD curl --fail http://localhost:8080/health || exit 1
+HEALTHCHECK --interval=6s --timeout=2s CMD curl --fail http://localhost:8080/health || exit 1
 CMD [ "npm", "start" ]
