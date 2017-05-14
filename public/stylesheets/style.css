@@ -16,3 +16,15 @@ border:2px dotted #33E1FF;
 padding: 10px;
 
 }
+#main{width: 500px;}
+#menu{
+  width:200px;
+  float:left;
+}
+#action{
+  width:300px;
+  float:right;
+}
+#action li{
+  list-style-type: none;
+}
