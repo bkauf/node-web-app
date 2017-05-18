@@ -11,4 +11,19 @@ $(document).ready( function() {
           //  alert("Data: " + data + "\nStatus: " + status);
         });
   });
+
+  $(".secrets").click(function(e){
+    var addressValue = $(this).attr("href");
+
+    $.post( "/read", { file_name: addressValue})
+    .done(function( data ) {
+      alert(data);
+    });
+  //  $.get("/read/addressValue", function(data, status){
+  //      alert("Data: " + data);
+  //  });
+
+  });
+
+
 });
