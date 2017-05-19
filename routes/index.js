@@ -9,8 +9,8 @@ var files = [];
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  //  const testFolder = '/run/secrets';
-  const testFolder = '.';
+    const testFolder = '/run/secrets';
+  //const testFolder = '.';
   var   files = [];
 
     if (fs.existsSync(testFolder)) {
