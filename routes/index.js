@@ -9,13 +9,17 @@ var files = [];
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-    const testFolder = '/run/secrets';
-  //  const testFolder = '.';
-    files = [];
+  //  const testFolder = '/run/secrets';
+  const testFolder = '.';
+  var   files = [];
 
     if (fs.existsSync(testFolder)) {
       fs.readdirSync(testFolder).forEach(file => {
-        files.push(file);
+        var obj = {
+          id: file,
+          name:'#'+file
+        };
+        files.push(obj);
       })
     }
 

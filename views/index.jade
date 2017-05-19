@@ -11,13 +11,16 @@ html
       h2 From #{container}
       #main
         #banner Secrets in this Container:
-          a(href='#{secrets.toString()').secrets #{secrets.toString()}
+          each item in secrets
+            ul
+              li
+                a(href='#{item.name}').secrets #{item.name}
         #menu
-          #ul.menu
-          li
-            a(href="#health").health Get Health
-          li
-            a(href="#kill").kill Kill Container
+          ul.menu
+            li
+              a(href="#health").health Get Health
+            li
+              a(href="#kill").kill Kill Container
         #action
           #ul.action
             li#status
