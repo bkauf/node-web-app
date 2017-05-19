@@ -10,17 +10,14 @@ router.post('/', function(req, res, next) {
   var file = file_name.split("#");
 
   if (fs.existsSync(path)) {
-    //file_name = "test.txt";
-      fs.readFile(path+file, 'utf8', function(err, data) {
+
+    /*  fs.readFile(path+file, 'utf8', function(err, data) {
           if (err) throw err;
           res.send(data);
-      });
-    }else{
 
+      });*/
+  }else{
       res.send("error");
-
     }
-
-//  res.send(file_name);
 });
 module.exports = router;
