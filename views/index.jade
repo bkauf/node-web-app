@@ -10,11 +10,12 @@ html
       h1=title
       h2 From #{container}
       #main
-        #banner Secrets in this Container:
-          each item in secrets
-            ul
-              li
-                a(href='#{item.name}').secrets #{item.id}
+        if #{secrets.length} > 0
+          #banner Secrets in this Container:
+            each item in secrets
+              ul
+                li
+                  a(href='#{item.name}').secrets #{item.id}
         #menu
           ul.menu
             li
