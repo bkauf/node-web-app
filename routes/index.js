@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
     const path = '/run/secrets';
   //const path = '.';
-  var   files = [];
+  var files = [];
 
     if (fs.existsSync(path)) {
       fs.readdirSync(path).forEach(file => {
