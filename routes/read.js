@@ -15,6 +15,11 @@ router.post('/', function(req, res, next) {
           if (err) throw err;
           res.send(data);
       });
+    }else{
+
+      res.send("error");
+
+    }
 
 //  res.send(file_name);
 });
