@@ -10,8 +10,8 @@ html
       h1=title
       h2 From #{container}
       #main
-        - var keys = #{secrets.length}
-        if keys > 0
+        - var keys = "test"
+        if keys == "test"
         #banner Secrets in this Container:
           each item in secrets
             ul
