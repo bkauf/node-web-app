@@ -11,13 +11,12 @@ html
       h2 From #{container}
       #main
         - var keys = secrets.length
-        #{keys}
-        if keys > 1
-        #secrets Secrets in this Container:
-          each item in secrets
-            ul
-              li
-                a(href='#{item.name}').secrets #{item.id} #{keys}
+        if keys > 0
+          #secrets Secrets in this Container:
+            each item in secrets
+              ul
+                li
+                  a(href='#{item.name}').secrets #{item.id} #{keys}
         #menu
           ul.menu
             li
