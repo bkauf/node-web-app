@@ -1,5 +1,5 @@
 FROM node:7.9
-RUN apt-get update && apt-get upgrade -y
+RUN apt-get update && apt-get dist-upgrade -y
 RUN npm install
 # Create app directory
 RUN mkdir -p /usr/src/app
