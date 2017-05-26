@@ -1,5 +1,5 @@
 FROM node:7.9
-apt-get update && apt-get install dnsutils -y
+RUN apt-get update && apt-get install dnsutils -y
 RUN npm install
 # Create app directory
 RUN mkdir -p /usr/src/app
