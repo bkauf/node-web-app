@@ -1,11 +1,6 @@
 body {
-  padding: 50px;
+  padding-top: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("../images/whale-long.svg");
-  background-repeat: no-repeat;
-
-  /*background-position: 50px 100px; */
-  background-position: center 270px;
 }
 
 a {
@@ -16,10 +11,19 @@ border:2px dotted #33E1FF;
 padding: 10px;
 
 }
+#page{
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    background-image: url("../images/whale-long.svg");
+    background-repeat: no-repeat;
+    background-position: center 270px;
+
+}
 #wrapper{
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 600px;
 }
 #header{width:500px}
 #header-left{
@@ -34,12 +38,14 @@ padding: 10px;
 }
 #main{width: 500px;}
 #menu{
-  width:200px;
+  width:33%;
   float:left;
+  margin: 0;
 }
 #action{
-  width:300px;
+  width:67%;
   float:right;
+  margin: 0;
 }
 #action li{
   list-style-type: none;
