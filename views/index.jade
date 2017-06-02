@@ -7,8 +7,12 @@ html
     title From #{container}
   body
     block content
-      h1=title
-      h2 Frommm Container #{container}
+      #header
+        #header-left
+          h1=title
+          h2 Frommm Container #{container}
+        #header-right
+          p=version 1
       #main
         - var keys = secrets.length
         if keys > 0

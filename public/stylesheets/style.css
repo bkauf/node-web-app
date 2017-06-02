@@ -16,6 +16,17 @@ border:2px dotted #33E1FF;
 padding: 10px;
 
 }
+#header{width:500px}
+#header-left{
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+#header-right{
+  float: right;
+  width: 50%;
+  margin: 0;
+}
 #main{width: 500px;}
 #menu{
   width:200px;
