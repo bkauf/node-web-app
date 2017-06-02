@@ -6,28 +6,27 @@ html
     script(src='/javascripts/script.js')
     title From #{container}
   body
-    #page
-      #wrapper
-        #header
-          #header-left
-            h1=title
-            h2 From Container #{container}
-          #header-right
-            img(src="/images/whale_down.png", width="200px")
-        #main
-          - var keys = secrets.length
-          if keys > 0
-            #secrets Secrets in this Container:
-              each item in secrets
-                ul
-                  li
-                    a(href='#{item.name}').secrets #{item.id}
-          #menu
-            ul.menu
-              li
-                a(href="#health").health Get Health
-              li
-                a(href="#kill").kill Kill Container
-          #action
-            #ul.action
-              li#status
+    #wrapper
+      #header
+        #header-left
+          h1=title
+          h2 From Container #{container}
+        #header-right
+          img(src="/images/whale_down.png", width="200px")
+      #main
+        - var keys = secrets.length
+        if keys > 0
+          #secrets Secrets in this Container:
+            each item in secrets
+              ul
+                li
+                  a(href='#{item.name}').secrets #{item.id}
+        #menu
+          ul.menu
+            li
+              a(href="#health").health Get Health
+            li
+              a(href="#kill").kill Kill Container
+        #action
+          #ul.action
+            li#status
