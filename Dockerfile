@@ -1,6 +1,8 @@
-FROM node:7.9
-RUN apt-get update && apt-get install dnsutils -y
-RUN npm install
+
+FROM node:8.4.0-alpine
+RUN apk --no-cache add curl
+RUN apk --no-cache add bind-tools
+
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
