@@ -15,14 +15,14 @@ jobs:
       - setup_remote_docker
 
       #build image and make two copies
-      - docker build bkauf/node-web-app:${CIRCLE_BUILD_NUM} .
+      - run: docker build bkauf/node-web-app:${CIRCLE_BUILD_NUM} .
     #  - docker tag ${DTR_IPADDR}/engineering/${DTR_PROJECT}:1.${BUILD_NUMBER} ${DTR_IPADDR}/engineering/${DTR_PROJECT}:latest
 
     #login to DTR
-      - docker login -u bkauf -p ${PASSWORD}
+      - run: docker login -u bkauf -p ${PASSWORD}
 
     #push both copies of the image
-      - docker push bkauf/node-web-app:${CIRCLE_BUILD_NUM}
+      - run: docker push bkauf/node-web-app:${CIRCLE_BUILD_NUM}
 
 
 
