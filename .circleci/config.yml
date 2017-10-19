@@ -15,7 +15,7 @@ jobs:
       - setup_remote_docker
 
       #build image and make two copies
-      - run: docker -t build bkauf/node-web-app:${CIRCLE_BUILD_NUM} .
+      - run: docker build -t bkauf/node-web-app:${CIRCLE_BUILD_NUM} .
     #  - docker tag ${DTR_IPADDR}/engineering/${DTR_PROJECT}:1.${BUILD_NUMBER} ${DTR_IPADDR}/engineering/${DTR_PROJECT}:latest
 
     #login to DTR
