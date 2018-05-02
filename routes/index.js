@@ -5,7 +5,7 @@ var hostname = os.hostname();
 var fs = require('fs');
 var files = [];
 
-
+/* test */ 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
